@@ -1,0 +1,44 @@
+.menu {
+	background: #3F51B5;
+	border: 10px solid #fff;
+	a {
+		float: left;
+		display: inline-block;
+		padding: 8px 0;
+		width: 33.33%;
+		color: #fff;
+		font-weight: 600;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: background .2s ease-in-out;
+		&:hover {
+			background: rgba(255, 255, 255, .1);
+		}
+		&:focus {
+			background: none;
+		}
+		&:hover:focus {
+			background: rgba(255, 255, 255, .1);
+		}
+	}
+	.menu-itens {
+		transition: all .2s ease-in-out;
+		transform-origin: 0 0;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: $responsive-break) {
+	.menu {
+		a {
+			float: none;
+			width: 100%;
+		}
+	}
+	.menu-itens {
+		max-height: 0;
+		&.active {
+			max-height: 500px;
+		}
+	}
+}
