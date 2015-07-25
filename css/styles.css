@@ -1887,7 +1887,6 @@ code {
   height: 10px; }
 
 .clearfix {
-  overflow: auto;
   *zoom: 1; }
   .clearfix:before, .clearfix:after {
     content: " ";
@@ -1966,10 +1965,6 @@ code {
       background: none; }
     .menu a:hover:focus {
       background: rgba(255, 255, 255, 0.1); }
-  .menu .menu-itens {
-    transition: all .2s ease-in-out;
-    transform-origin: 0 0;
-    overflow: hidden; }
 
 @media screen and (max-width: 700px) {
   .menu a {
@@ -1977,9 +1972,16 @@ code {
     width: 100%; }
 
   .menu-itens {
-    max-height: 0; }
+    height: 0;
+    visibility: hidden;
+    transform: translateZ(0);
+    transform: scaleY(0);
+    transition: all .2s ease-in-out;
+    transform-origin: top; }
     .menu-itens.active {
-      max-height: 500px; } }
+      height: 135px;
+      transform: scaleY(1);
+      visibility: visible; } }
 #trabalho .half-column {
   height: 400px; }
   @media screen and (max-width: 700px) {
