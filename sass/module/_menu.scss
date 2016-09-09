@@ -12,6 +12,8 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		transition: background .2s ease-in-out;
+		-webkit-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
 		&:hover {
 			background: rgba(255, 255, 255, .1);
 		}
@@ -22,11 +24,6 @@
 			background: rgba(255, 255, 255, .1);
 		}
 	}
-	.menu-itens {
-		transition: all .2s ease-in-out;
-		transform-origin: 0 0;
-		overflow: hidden;
-	}
 }
 @media screen and (max-width: $responsive-break) {
 	.menu {
@@ -36,9 +33,16 @@
 		}
 	}
 	.menu-itens {
-		max-height: 0;
+		height: 0;
+		visibility: hidden;
+		transform: translateZ(0);
+	    transform: scaleY(0);
+		transition: all .2s ease-in-out;
+		transform-origin: top;
 		&.active {
-			max-height: 500px;
+			height: 135px;
+		    transform: scaleY(1);
+			visibility: visible;
 		}
 	}
 }

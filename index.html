@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" manifest="manifest.appcache">
 <head>
 	<meta charset="UTF-8">
 	<title>Imagina Mundo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Meu portfolio" >
+	<meta name="description" content="Portfolio do Diogo :D" >
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<meta property="og:image" content="http://imaginamundo.github.io/portfolio/img/trabalho/imagina-mundo.png">
+
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 	<body id="trabalho">
 		<nav class="menu clearfix">
@@ -17,7 +23,7 @@
 				</a>
 			</div>
 			<div id="menu-itens-list" class="menu-itens">
-				<a href="/">Trabalho</a>
+				<a href="http://imaginamundo.github.io/portfolio/">Trabalho</a>
 				<a href="sobre.html">Sobre</a>
 				<a href="contato.html">Contato</a>
 			</div>
@@ -25,19 +31,21 @@
 		<div class="clearfix">
 			<div class="trabalho">
 				<div class="right half-column clearfloat-mobile image">
-					<img src="https://ununsplash.imgix.net/photo-1429277096327-11ee3b761c93?fit=crop&fm=jpg&h=700&q=75&w=1050">
+					<img src="img/trabalho/imagina-mundo.png" alt="Imagina Mundo" title="Imagina Mundo">
 				</div>
 				<div class="left half-column clearfloat-mobile">
 					<div class="content">
 						<h2>Imagina Mundo</h2>
 						<p>Olá, meu nome é Diogo e esse é o meu portfolio, espero que goste do que encontrar.</p>
 						<p>Encontre-me no
-							<a href="https://www.facebook.com/diogos.go" target="_blank">
+							<a href="https://www.facebook.com/diogos.go" class="no-wrap" target="_blank">
 								<i class="icon icon-fw icon-facebook-official"> </i>Facebook</a>,
-							<a href="https://instagram.com/imaginamundo" target="_blank">
-								<i class="icon icon-fw icon-instagram"> </i>Instagram</a> e
-							<a href="https://github.com/imaginamundo" target="_blank">
-								<i class="icon icon-fw icon-github"> </i>GitHub</a>
+							<a href="https://instagram.com/imaginamundo" class="no-wrap" target="_blank">
+								<i class="icon icon-fw icon-instagram"> </i>Instagram</a>,
+							<a href="https://github.com/imaginamundo" class="no-wrap" target="_blank">
+								<i class="icon icon-fw icon-github"> </i>GitHub</a> e
+							<a href="https://www.linkedin.com/pub/diogo-ferreira-fernandes/102/109/555" class="no-wrap" target="_blank">
+								<i class="icon icon-fw icon-linkedin-square"> </i>LinkedIn</a>.
 						</p>
 					</div>
 				</div>
@@ -45,7 +53,45 @@
 			</div>
 			<div class="trabalho">
 				<div class="left half-column clearfloat-mobile image">
-					<img src="img/trabalho/square.jpg" alt="Square" title="square" />
+					<img src="img/trabalho/faculdade-impacta.png" alt="Square" title="square" />
+				</div>
+				<div class="right half-column clearfloat-mobile">
+					<div class="content">
+						<h2>Faculdade Impacta</h2>
+						<p>Site para a faculdade Impacta.</p>
+						<ul>
+							<li>Responsivo;</li>
+							<li>Preprocessador de CSS (SASS);</li>
+							<li>Angular.</li>
+						</ul>
+						<p class="text-center-mobile">
+							<a href="http://www.impacta.edu.br/" target="_blank" class="btn btn-primary">Visitar página</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="trabalho">
+				<div class="right half-column clearfloat-mobile image">
+					<img src="img/trabalho/santander-caminhos-e-escolhas.png" alt="Square" title="square" />
+				</div>
+				<div class="left half-column clearfloat-mobile">
+					<div class="content">
+						<h2>Santander Caminhos e Escolhas</h2>
+						<p>Site para o Santander com cursos e palestras.</p>
+						<ul>
+							<li>Responsivo;</li>
+							<li>Preprocessador de CSS (SASS);</li>
+							<li>Utilizando Visual Studio.</li>
+						</ul>
+						<p class="text-center-mobile">
+							<a href="https://www.caminhoseescolhas.com.br/" target="_blank" class="btn btn-primary">Visitar página</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="trabalho">
+				<div class="left half-column clearfloat-mobile image">
+					<img src="img/trabalho/square.png" alt="Square" title="square" />
 				</div>
 				<div class="right half-column clearfloat-mobile">
 					<div class="content">
@@ -53,7 +99,7 @@
 						<p>Um pequeno framework de grid para quadrados feito completamente em CSS, open-source e livre para alterações.</p>
 						<ul>
 							<li>Responsivo;</li>
-							<li>Preprocessador de CSS Sass.</li>
+							<li>Preprocessador de CSS (SASS).</li>
 						</ul>
 						<p class="text-center-mobile">
 							<a href="http://imaginamundo.github.io/square/" target="_blank" class="btn btn-primary">Visitar página</a>
@@ -119,9 +165,9 @@
 			</div>
 			<div class="trabalho">
 				<div class="left half-column clearfloat-mobile image">
-					<img src="img/trabalho/leda-e-o-cisne.jpg" alt="Leda e o Cisne" title="Leda e o Cisne" />
+					<img src="img/trabalho/leda-e-o-cisne.png" alt="Leda e o Cisne" title="Leda e o Cisne" />
 				</div>
-				<div class="right half-column clearfloat-mobile">
+				<div class="left half-column clearfloat-mobile">
 					<div class="content">
 						<h2>Leda e o Cisne</h2>
 						<p>Marca para banda indie.</p>
@@ -136,7 +182,7 @@
 				<div class="right half-column clearfloat-mobile image">
 					<img src="img/trabalho/ceara-flex.png" alt="Ceará Flex" title="Ceará Flex" />
 				</div>
-				<div class="left half-column clearfloat-mobile">
+				<div class="right half-column clearfloat-mobile">
 					<div class="content">
 						<h2>Ceará Flex</h2>
 						<p>Site de mostruário para empresa de acessórios para manutenção e instalação insutrial.</p>
@@ -146,6 +192,35 @@
 						</ul>
 						<p class="text-center-mobile">
 							<a href="http://www.cearaflex.com.br/" target="_blank" class="btn btn-primary">Visitar página</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="trabalho">
+				<div class="left half-column clearfloat-mobile image">
+					<img src="img/trabalho/css-framework.png" alt="Simple CSS Framework" title="Ceará Flex" />
+				</div>
+				<div class="right half-column clearfloat-mobile">
+					<div class="content">
+						<h2>Simple CSS Framework</h2>
+						<p>Feito de forma simples com SASS para agilizar novos projetos, padroniza formulários, botões e tipografia.</p>
+						<p class="text-center-mobile">
+							<a href="http://imaginamundo.github.io/framework/" target="_blank" class="btn btn-primary">Visitar página</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="trabalho">
+				<div class="right half-column clearfloat-mobile image">
+					<img src="img/trabalho/know-your-destiny.png" alt="Know Your Destiny" title="Ceará Flex" />
+				</div>
+				<div class="left half-column clearfloat-mobile">
+					<div class="content">
+						<h2>Know Your Destiny</h2>
+						<p>Jogo responsivo feito com HTML, CSS e jQuery. NSFW.</p>
+						<p>Também feito aplicativo para Android e iPhone com PhoneGap.</p>
+						<p class="text-center-mobile">
+							<a href="http://imaginamundo.github.io/KnowYourDestiny/" target="_blank" class="btn btn-primary">Visitar página</a>
 						</p>
 					</div>
 				</div>
